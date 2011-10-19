@@ -1,6 +1,11 @@
-#  HTML5 Reset (http://html5reset.org)
+#  HTML5 ReMo Boil
 
 ## Summary:
+## Resumen:
+
+HTML5 ReMo Boil
+Es un conjunto de archivos para empezar un proyecto HTML5 con capacidades para Móviles
+Es un Fork de HTML5 Reset (http://html5reset.org) de @murtaugh
 
 HTML5 Reset is a simple set of best practices to get web projects off on the right foot.
 
