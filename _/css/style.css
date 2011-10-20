@@ -35,10 +35,6 @@ embed {max-width: 100%;}
 /* force a vertical scrollbar to prevent a jumpy page */
 html {overflow-y: scroll;}
 
-/* we use a lot of ULs that aren't bulleted. 
-	don't forget to restore the bullets within content. 
-ul {list-style: none;}*/
-
 blockquote, q {quotes: none;}
 
 blockquote:before, 
@@ -54,7 +50,7 @@ abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
 
 /* tables still need cellspacing="0" in the markup */
 table {border-collapse: collapse; border-spacing: 0;}
-th {font-weight: bold; vertical-align: bottom;}
+th {vertical-align: bottom;}
 td {font-weight: normal; vertical-align: top;}
 
 hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
@@ -76,13 +72,20 @@ select, input, textarea {font: 99% sans-serif;}
 
 table {font-size: inherit; font: 100%;}
  
-/* Accessible focus treatment
-	people.opera.com/patrickl/experiments/keyboard/test */
+/* Reinstate accessible focus treatment */
+a:focus {outline: thin dotted;}
+/*
+* Improves readability when focused and also mouse hovered in all browsers
+* people.opera.com/patrickl/experiments/keyboard/test
+*/
 a:hover, a:active {outline: none;}
 
 small {font-size: 85%;}
 
-strong, th {font-weight: bold;}
+strong, b, th, dt {font-weight: bold;}
+em, i{font-style:italic;}
+ul, ol, dl{padding-left:3em; margin:1em 0;}
+nav ul, nav ol {list-style: none; list-style-image: none; margin: 0; padding: 0; }
 
 td, td img {vertical-align: top;} 
 
@@ -125,15 +128,16 @@ button {width: auto; overflow: visible;}
 -------------------------------------------------------------------------------*/
 
 /* new Linux- and Windows-friendly sans-serif font stack: http://mky.be/fontstack 
-Puedes agregar tu ideal de preferencia al principio.
+16px is great, both on mobile and desktop, jut leave it at that.
+Puedes agregar tu stack ideal de preferencia al principio.
 con 16px sigue siendo legible el texto en una pantalla pequeña con un poco de zoom menor a 100%*/
-body {font: 16px Helmet, Freesans, sans-serif;}
+body {font: 16px Helmet, Freesans, sans-serif; line-height:1.25em;}
 h1{font-size:2em;}
 h2{font-size:1.5em;}
-h3{font-size:1.2em;}
+h3{font-size:1.17em;}
 h4{font-size:1em;}
-h5{font-size:0.75em;}
-h6{font-size:0.75em;}
+h5{font-size:0.83em;}
+h6{font-size:0.67em;}
 /* using local fonts? make sure to read up on Paul Irish's 
 	Bulletproof @font-face syntax: http://mky.be/font-face/bulletproof/ */
 
@@ -153,7 +157,8 @@ a:link {-webkit-tap-highlight-color: #fcd700;}
 ins {background-color: #fcd700; color: #000; text-decoration: none;}
 mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
 
-/*sólo con esta clase es posible hecer que el sitio completo responda al ancho de pantalla*/
+/*Working with only this class is possible to build a responsive layout
+sólo con esta clase es posible hecer que el sitio completo responda al ancho de pantalla*/
 .wrapper{
 	width:960px;
 	margin:0 auto;
@@ -161,20 +166,18 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 
 
 
-/* Print styles!
--------------------------------------------------------------------------------*/
-@media print {
-
-
-
-}
-
-
 /* Media queries!
 -------------------------------------------------------------------------------*/
+/*
+Set big backgrounds here to avoid the small browsers loading unnnecesary content OR load them with javascript
+Define los fondos grandes en este media query para evitar que carguen innecesariamente en navegadores más pequeños
+*/
+@media screen and (min-device-width: 799px) {
+	
+}
 
 /* Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
-/*iPhone 4 y iPad horizontal Samsung & HTC WVGA horizonal have at least 800*/
+/*iPhone 4 y iPad horizontal, Samsung & HTC WVGA horizonal have at least 800*/
 @media screen and (max-device-width: 799px) {
 	.wrapper{
 		width:auto;
@@ -195,3 +198,9 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 	
 }
 
+/* Print styles!
+-------------------------------------------------------------------------------*/
+@media print {
+	body, select, input, textarea, a, a:link, a:visited {color: #000;}/* could just #0 work? */
+
+}
