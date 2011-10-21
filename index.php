@@ -30,11 +30,11 @@ require_once("_/inc/datos-globales.php");/*require() could be faster // require(
 	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
 	
 	<meta name="author" content="<?php echo $nombreMarca.' '.$webDelAutor; ?>">
-	<meta name="Copyright" content="Copyright <?php echo $autor.' '.date('Y'); ?>. All Rights Reserved.">
+	<meta name="Copyright" content="Copyright <?php echo $nombreMarca.' '.date('Y'); ?>. All Rights Reserved.">
 
 	<!-- Dublin Core Metadata : http://dublincore.org/ -->
 	<meta name="DC.title" content="<?php echo $nombreMarca; ?>">
-	<meta name="DC.subject" content="<?php echo $slogan; ?>">
+	<meta name="DC.subject" content="<?php echo $sloganMarca; ?>">
 	<meta name="DC.creator" content="<?php echo $autor; ?>">
 	
 	<!--  Mobile Viewport Fix
@@ -65,7 +65,7 @@ require_once("_/inc/datos-globales.php");/*require() could be faster // require(
 	<link rel="stylesheet" href="_/css/style.css">
 	
 	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
-	<script src="_/js/modernizr-1.7.min.js"></script>
+	<script src="_/js/modernizr.custom.63825.js"></script>
 
 </head>
 
@@ -118,7 +118,7 @@ require_once("_/inc/datos-globales.php");/*require() could be faster // require(
 	
 	<footer>
 		
-		<p><small>&copy; Copyright Your Name Here 2011. All Rights Reserved.</small></p>
+		<p><small>&copy; Copyright <?php echo $nombreMarca.' '.date('Y'); ?>. All Rights Reserved.</small></p>
 		
 	</footer>
 
