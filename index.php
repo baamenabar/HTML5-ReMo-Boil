@@ -26,8 +26,10 @@ require_once("_/inc/datos-globales.php");/*require() could be faster // require(
 	<meta name="description" content="">
 	<!-- Google will often use this as its description of your page/site. Make it good or delete it. -->
 	
-	<meta name="google-site-verification" content="">
-	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	<!--<meta name="google-site-verification" content="">
+	 Speaking of Google, don't forget to set your site up: http://google.com/webmasters 
+	 Mejor dejar esto como un recordatorio de agregar el sitio en webmasters, recomiendo usar el archivo independiente de verificación
+	 Better leave this as a reminder, I'd recommend using the downloadable .html to verify with google. -->
 	
 	<meta name="author" content="<?php echo $nombreMarca.' '.$webDelAutor; ?>">
 	<meta name="Copyright" content="Copyright <?php echo $nombreMarca.' '.date('Y'); ?>. All Rights Reserved.">
