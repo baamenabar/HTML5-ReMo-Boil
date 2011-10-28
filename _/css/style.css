@@ -133,6 +133,9 @@ Puedes agregar tu stack ideal de preferencia al principio.
 con 16px sigue siendo legible el texto en una pantalla pequeña con un poco de zoom menor a 100%*/
 body {font: 16px Helmet, Freesans, sans-serif;}
 div, span, h1, h2, h3, h4, h5, h6, p, blockquote, abbr, address, cite, code, del, dfn, em, ins, kbd, q, samp, small, strong, b, i, dl, dt, dd, ol, ul, li{line-height:1.25em;}
+/*este margen es bastante grande, pero da aire
+this is pretty much margin, but it gives good default space*/
+h1, h2, h3, h4, h5, h6, p{margin:1em 0;}
 h1{font-size:2em;}
 h2{font-size:1.5em;}
 h3{font-size:1.17em;}
