@@ -66,8 +66,8 @@ require_once("_/inc/datos-globales.php");/*require() could be faster // require(
 	Este no es un reset completo como el de Eric Mayer, estandariza definiciones comunmente aceptada, como cuerpos de texto. -->
 	<link rel="stylesheet" href="_/css/style.css">
 	
-	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
-	<script src="_/js/modernizr.custom.63825.js"></script>
+	<!-- all our JS is at the bottom of the page, except for Modernizr which, in this case, is the complete version, but you should build your own according to the project's requirements. -->
+	<script src="_/js/modernizr.custom.16775.js"></script>
 
 </head>
 
