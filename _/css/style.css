@@ -122,7 +122,22 @@ button {width: auto; overflow: visible;}
 .clearfix:after { clear: both; }  
 .clearfix { zoom: 1; }  
 
+/* other non-semantic helper classes 
+Otras clases de ayuda no-semántica (OHHHH el horroooor!)*/
 
+/*avoid Google Analytics gif to interfere with the layout, oopacity from CSS Tricks
+evita que el .gif de Google Analitycs Mobile interfiera con la diagramación. */
+.GAmobileGif{
+	position:absolute;
+	zoom: 1;
+    filter: alpha(opacity=0);
+	opacity:0;
+}
+.limpia, .clean{clear:both;}
+.flotaIzquierda{float:left;}
+.flotaDerecha{float:right;}
+.aIzquierda{text-align:left;}
+.aDerecha{text-align:right;}
 
 /* Ok, this is where the fun starts.
 -------------------------------------------------------------------------------*/

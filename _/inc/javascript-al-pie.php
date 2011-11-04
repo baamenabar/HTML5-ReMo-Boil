@@ -10,7 +10,36 @@
 
 <!-- Asynchronous google analytics; this is the official snippet.
 	 Replace UA-XXXXXX-XX with your site's ID and uncomment to enable.
-	 
+<?php 
+
+$GA_ACCOUNT = "MO-XXXXXX-XX";
+$GA_PIXEL = "_/inc/ga.php";
+
+function googleAnalyticsGetImageUrl() {
+	global $GA_ACCOUNT, $GA_PIXEL;
+	$url = "";
+	$url .= $GA_PIXEL . "?";
+	$url .= "utmac=" . $GA_ACCOUNT;
+	$url .= "&utmn=" . time() . rand(0, 0x7fffffff);
+	
+	$referer = $_SERVER["HTTP_REFERER"];
+	$query = $_SERVER["QUERY_STRING"];
+	$path = $_SERVER["REQUEST_URI"];
+	
+	if (empty($referer)) {
+	$referer = "-";
+	}
+	$url .= "&utmr=" . urlencode($referer);
+	
+	if (!empty($path)) {
+	$url .= "&utmp=" . urlencode($path);
+	}
+	
+	$url .= "&guid=ON";
+	
+	return $url;
+}
+?>	 
 <script>
 
   var _gaq = _gaq || [];
@@ -24,4 +53,5 @@
   })();
 
 </script>
+<?php $googleAnalyticsImageUrl = googleAnalyticsGetImageUrl(); ?><img src="<?= $googleAnalyticsImageUrl ?>" class="GAmobileGif" />
 -->
