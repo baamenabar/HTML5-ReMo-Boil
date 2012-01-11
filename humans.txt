@@ -2,7 +2,7 @@
 /* humanstxt.org */
 
 /* TEAM */
-  Chef: Agustín Amenabar
+  Chef: AgustÃ­n Amenabar
   Site: http://medula.cl
   Twitter: @ImINaBAR (en) / @baamenabar (es)
   Location: Santiago, Chile

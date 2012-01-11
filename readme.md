@@ -8,7 +8,7 @@ HTML5 Reset is a simple set of best practices to get web projects off on the rig
 ## Resumen:
 
 HTML5 ReMo Boil
-Es un conjunto de archivos para empezar un proyecto HTML5 con capacidades para Móviles, pensado para desarrollo en PHP
+Es un conjunto de archivos para empezar un proyecto HTML5 con capacidades para MÃ³viles, pensado para desarrollo en PHP
 Es un Fork de HTML5 Reset (http://html5reset.org) de @murtaugh
 
 
