@@ -125,14 +125,6 @@ button {width: auto; overflow: visible;}
 /* other non-semantic helper classes 
 Otras clases de ayuda no-semántica (OHHHH el horroooor!)*/
 
-/*avoid Google Analytics gif to interfere with the layout, oopacity from CSS Tricks
-evita que el .gif de Google Analitycs Mobile interfiera con la diagramación. */
-.GAmobileGif{
-	position:absolute;
-	zoom: 1;
-    filter: alpha(opacity=0);
-	opacity:0;
-}
 .limpia, .clean{clear:both;}
 .flotaIzquierda{float:left;}
 .flotaDerecha{float:right;}
@@ -191,20 +183,23 @@ sólo con esta clase es posible hecer que el sitio completo responda al ancho de
 Set big backgrounds here to avoid the small browsers loading unnnecesary content OR load them with javascript
 Define los fondos grandes en este media query para evitar que carguen innecesariamente en navegadores más pequeños
 */
-@media screen and (min-device-width: 799px) {
+@media screen and (min-width: 960px) {
 	
 }
-
-/* Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
-/*iPhone 4 y iPad horizontal, Samsung & HTC WVGA horizonal have at least 800*/
-@media screen and (max-device-width: 799px) {
+@media screen and (max-width: 960px) {
 	.wrapper{
 		width:auto;
 		margin:0;
 	}
 }
 
-@media screen and (max-device-width: 480px) {
+/* Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
+/*iPhone 4 y iPad horizontal, Samsung & HTC WVGA horizonal have at least 800*/
+@media screen and (max-width: 799px) {
+	
+}
+/* max-device-width al parecer es sólo reconocido por smartphones*/
+@media screen and (max-width: 480px) {
 	
 		
 }
@@ -220,6 +215,6 @@ Define los fondos grandes en este media query para evitar que carguen innecesari
 /* Print styles!
 -------------------------------------------------------------------------------*/
 @media print {
-	body, select, input, textarea, a, a:link, a:visited {color: #000;}/* could just #0 work? */
+	body, select, input, textarea, a, a:link, a:visited {color: #000;}
 
 }
