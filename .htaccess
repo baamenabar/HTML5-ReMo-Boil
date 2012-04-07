@@ -392,7 +392,11 @@ FileETag None
 # RewriteRule ^ https://example-domain-please-change-me.com%{REQUEST_URI} [R=301,L]
 # </IfModule>
 
-
+# ----------------------------------------------------------------------
+# Modify Upload Limits
+# ----------------------------------------------------------------------
+# in Media Temple the default is 2M
+#php_value upload_max_filesize 8
 
 # ----------------------------------------------------------------------
 # Prevent 404 errors for non-existing redirected folders
