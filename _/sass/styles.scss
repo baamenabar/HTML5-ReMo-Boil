@@ -1,69 +1,61 @@
 $azulHover:#06e;
 
-//"museo-sans", "PT Sans", "ubuntu-mono", "pt-serif"
-
 @import "compass/css3";
-@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic);
 @import "_normals";
 
-i{
-	font-family: "pt-serif",serif;
-	font-style: italic;
-	//font-size:17px;
-	//color:#444;
+//@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic);//Our current favourite 'PT Sans'
+$defaultFontStack: Helmet, Freesans, sans-serif;
+//$defaultFontStack: "PT Sans", Helmet, Freesans, sans-serif;
+
+$altoFooter = 150px;
+@import "_stickyFooter";
+/* un-comment to see stickyFooter at work. */
+//footer{	background-color:#F1F1F1;}
+
+body {font-family:$defaultFontStack;}
+
+/* Working with only this class is possible to build a responsive layout
+/* sólo con esta clase es posible hecer que el sitio completo responda al ancho de pantalla*/
+.wrapper{
+    width:960px;
+    margin:0 auto;
 }
 
-h1,h2,h3{
-	font-family:"museo-sans","PT Sans",sans-serif;
-	font-style:italic;
-	font-weight:900;
-	font-size:48px;
-	color:#565656;
-	line-height:1em;
+
+
+/* Media queries!
+/*-------------------------------------------------------------------------------*/
+/*
+/* Set big backgrounds here to avoid the small browsers loading unnnecesary content OR load them with javascript
+/* Define los fondos grandes en este media query para evitar que carguen innecesariamente en navegadores más pequeños
+*/
+@media screen and (min-width: 960px) {
+    
 }
-h2, h3{
-	font-style:normal;
-	font-size:28px;
+@media screen and (max-width: 960px) {
+    .wrapper{
+        width:auto;
+        margin:0;
+    }
 }
-h3{
-	font-size:24px;
+
+/* Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
+/*iPhone 4 y iPad horizontal, Samsung & HTC WVGA horizonal have at least 800*/
+@media screen and (max-width: 799px) {
+    
 }
-article {
-	max-width:595px;
-	header {
-		border-bottom:1px solid #B3B3B3;
-		h2, h3{
-			color:#45BCD2;
-			font-size:20px;
-			margin:0;
-		}
-		h3{font-style:italic; }
-	}
-	a{
-		text-decoration:none;
-		border-bottom:1px solid #ddd;
-		&:link, &:visited{
-			border-bottom-color:#ddd;
-		}
-		&:hover, &:active, &:focus{
-			border-bottom-color:$azulHover;
-		}
-	}
-	figure{
-		font-family:"pt-serif","PT Sans",sans-serif;
-		background:#FFF;
-		padding:1em;
-		border:1px solid #CCC;
-		margin:0 -1em 1em -1em;
-		.boxshadow &{
-			border:none;
-			@include single-box-shadow(rgba(0,0,0,0.3),1px, 1px, 3px, 1px);
-		}
-		img{ 
-			max-width:100%;
-			border: 1px dotted #DDD;
-		}
-	}
+/* max-device-width al parecer es sólo reconocido por smartphones*/
+@media screen and (max-width: 480px) {
+    
+        
+}
+
+@media all and (orientation: portrait) {
+    
+}
+
+@media all and (orientation: landscape) {
+    
 }
 
 @import "_print";
