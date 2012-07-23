@@ -18,7 +18,12 @@
 ### github.com/paulirish/html5-boilerplate-server-configs
 ###
 
-
+# ------------------------------------------------------------
+# FOR MEDIA TEMPLE GRID SERVER
+# ------------------------------------------------------------
+#The folowing line did break my WAMP local server, but in MT it changes your PHP 5.2 to 5.3.1 (or something similar)
+#AddHandler php-stable .php
+#php_value upload_max_filesize 8M
 
 # ----------------------------------------------------------------------
 # Better website experience for IE users
@@ -483,6 +488,9 @@ php_value default_charset UTF-8
 
 # Rename session cookie to something else, than PHPSESSID
 # php_value session.name sid
+
+#Session timeout. 3600 = 1 hour
+php_value session.gc_maxlifetime 3600
 
 # Do not show you are using PHP
 # Note: Move this line to php.ini since it won't work in .htaccess
