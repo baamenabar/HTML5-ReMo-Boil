@@ -70,15 +70,16 @@ include "_/inc/datos-globales.php";
 		
 	</div>
 
-	<div class="urgeo"></div>
+	
+</div>
+
+<div class="urgeo"></div>
 </div>
 <footer>	
 	<div class="wrapper">
 		<p><small>&copy; Copyright <?php echo $nombreMarca.' '.date('Y'); ?>. All Rights Reserved.</small></p>
 	</div>
 </footer>
-
-</div>
 <?php require("views/javascript-al-pie.php"); ?>  
 </body>
 </html>
