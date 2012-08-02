@@ -14,7 +14,7 @@
 /* Let's default this puppy out
 -------------------------------------------------------------------------------*/
 
-$amarilloMedula = #fcd700;
+$amarilloMedula : #fcd700;
 
 /*! normalize.css 2012-07-07T09:50 UTC */
 
@@ -250,9 +250,9 @@ q {
 }
 
 /*
- * Addresses `quotes` property not supported in S4.
+ /** Addresses `quotes` property not supported in S4.
  /* Evaluar si eliminamos esta regla*/
- */
+ /**/
 
 q:before,
 q:after {

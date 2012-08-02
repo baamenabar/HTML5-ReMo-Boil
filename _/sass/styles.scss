@@ -7,7 +7,7 @@ $azulHover:#06e;
 $defaultFontStack: Helmet, Freesans, sans-serif;
 //$defaultFontStack: "PT Sans", Helmet, Freesans, sans-serif;
 
-$altoFooter = 150px;
+$altoFooter : 150px;
 @import "_stickyFooter";
 /* un-comment to see stickyFooter at work. */
 //footer{	background-color:#F1F1F1;}
@@ -57,6 +57,3 @@ body {font-family:$defaultFontStack;}
 @media all and (orientation: landscape) {
     
 }
-
-@import "_print";
-@import "_helpers";
