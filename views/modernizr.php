@@ -1,8 +1,9 @@
 <!-- Here we have several builds of Modernizr 2.5
 	Aquí tenemos listas varias versiones de Modernizr 2.5 -->
 
-	<script src="_/js/libs/modernizr.custom.20594.js"></script>
-<?php /*	<!-- versión ULTRA liviana con html5Shiv, los CSS más comunes: 7 KB : Build: http://modernizr.com/download/#-backgroundsize-borderradius-boxshadow-multiplebgs-rgba-textshadow-cssanimations-csscolumns-generatedcontent-cssgradients-csstransforms-csstransitions-shiv-teststyles-testprop-testallprops-hasevent-prefixes-domprefixes -->
+	<script src="_/js/libs/modernizr.custom.74229.js"></script>
+<?php /* <!--versión ULTRA liviana con las clases y svg. http://modernizr.com/download/#-backgroundsize-borderradius-boxshadow-hsla-rgba-textshadow-cssanimations-csscolumns-generatedcontent-cssgradients-csstransforms-csstransitions-inlinesvg-svg-svgclippaths-shiv-mq-cssclasses-teststyles-testprop-testallprops-hasevent-prefixes-domprefixes
+
 
 
 	<!--<script src="_/js/libs/modernizr.custom.53975.js"></script>

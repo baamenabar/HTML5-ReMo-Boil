@@ -23,7 +23,7 @@
 # ------------------------------------------------------------
 #The folowing line did break my WAMP local server, but in MT it changes your PHP 5.2 to 5.3.1 (or something similar)
 #AddHandler php-stable .php
-#php_value upload_max_filesize 8M
+#php_value upload_max_filesize 16M
 
 # ----------------------------------------------------------------------
 # Better website experience for IE users

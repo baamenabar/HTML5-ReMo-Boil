@@ -10,5 +10,10 @@ if (!(window.console && console.log)) {
         }
     }());
 }
+// Best isNumber evaluation ever By: CMS (Christian C. Salvadó) in http://stackoverflow.com/questions/18082/validate-numbers-in-javascript-isnumeric
+// uncomment when needed
+/*function isNumber(n) {
+  return !isNaN(parseFloat(n)) && isFinite(n);
+}//*/
 
 // place any jQuery/helper plugins in here, instead of separate, slower script files.
